@@ -1,0 +1,15 @@
+.btn {
+    padding: .2em .5em;
+    margin: .2em;
+    border-radius: 7px;
+}
+.btn-warning {
+    background-color: $color-accent-dark;
+}
+.btn-danger {
+    background-color: $bg-color-danger-dark; 
+}
+.btn-primary {
+    background-color: $color-accent-secondary-dark;
+}
+

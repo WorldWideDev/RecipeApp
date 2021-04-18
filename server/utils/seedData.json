@@ -1,0 +1,76 @@
+[
+    {
+        "name": "Butter Chicken",
+        "description": "Make restaurant-quality Indian butter chicken at home in under 30 minutes! Join the thousands who have made this very popular Instant Pot Butter Chicken Recipe--which also happens to be a great keto chicken recipe.",
+        "ingredients" : [
+            "Canned Tomatoes (1 14oz can)",
+            "Garlic (5-6 cloves)",
+            "Minced Fresh Ginger (1-2 tsp)",
+            "Turmeric (1 tsp)",
+            "Cayenne Pepper (1/2 tsp)",
+            "Smoked Paprika (1 tsp)",
+            "Kosher Salt (1 tsp)",
+            "Garam Masala (1 tsp)",
+            "Ground Cumin (1 tsp)",
+            "Boneless Skinless Chicken Thighs (1 lb) If frozen, add 1-2 minutes to total time)",
+            "Butter cut into cubes (4 oz)",
+            "Heavy Cream (4 oz)",
+            "Garam Masala spice mix (1 tsp)",
+            "cilantro (1/4-1/2 cup chopped)",
+            "limes (2-3)"
+        ],
+        "steps": [
+            "Place tomatoes and all spices in the bottom of the Instant Pot.",
+            "Add in chicken thighs or chicken breast. You do not need to add any water. The chicken and tomatoes alone will release a lot of water. If you have an 8-quart pressure cooker, you may ant to double the ingredients or add in 1/4 cup of water just to be cautious.",
+            "This step is entirely optional--but very nifty. If you'd like to make basmati rice, or mashed cauliflower, you can cook them at the same time as the chicken for an easy Instant Pot recipe.",
+            "Place a metal trivet on top of the sauce. Then, you can use a small container with rice or with frozen riced cauliflower to go on top of it.",
+            "This is called Pot-in-Pot Cooking and I have a video here that will tell you all you need to know about how to do Pot in pot cooking.",
+            "If you're cooking rice, add rice to a small container. Measure out the water and put that into the rice container. When you're using frozen riced cauliflower, you do not need to add water. The steam and heat alone will be enough to cook the cauliflower.",
+            "Cook the butter chicken for 10 mins on high pressure. Allow it to release pressure naturally for an additional 10 minutes.",
+            "Once you open the Instant Pot, the rice will be cooked to perfection. For mashed cauliflower, you can add butter, salt, and pepper and mash it in.",
+            "If you prefer a cauliflower and cheese dish with this, which, while not traditionally Indian AT ALL, is actually very good, check out this Instant Pot Cauliflower and Cheese Recipe.",
+            "At this point, remove the chicken and set it aside. You will be adding things and blending the sauce into a tomato puree--and you don't want blended chicken in your Butter Chicken.",
+            "Add butter, cream, and 1 additional teaspoon of garam masala.",
+            "You are doing this after the tomato sauce has cooked because pressure cooking causes butter and heavy cream to separate into a greasy mess. Adding it afterward allows the fat to emulsify properly into the sauce, resulting in utter deliciousness.",
+            "The additional teaspoon of garam masala is to add fragrance to the dish before serving."
+            
+        ],
+        "isInstantPot": true,
+        "cookingTime" : "Prep: 20 minutes. Pressue Time: 10 min.  Natural Release: 10 min"
+    },
+    {
+        "name": "Chicken Tortilla Soup",
+        "description": "A fast and flavorful recipe that can be made using dry or canned beans, and using fresh or frozen thighs, or breast meat. Very adaptable! Very easy.",
+        "ingredients" : [
+            "1–2 tablespoons olive oil",
+            "1 onion, diced",
+            "5 garlic cloves, rough chopped (or sub 1–2 tablespoons granulated garlic)",
+            "1–2 cups carrots, diced",
+            "1 cup celery, diced",
+            "1 x 14.5 ounce can diced tomatoes, and juices ( preferably fire roasted) or 1 ½ cups diced tomatoes w/juices",
+            "1  small 4-ounce can, mild green chilies (or sub 1 poblano chili, diced)",
+            "2 lbs chicken thighs (boneless, skinless, fresh or frozen) left whole (or breasts -see cooking notes)",
+            "1 cup dry black beans or sub 1-2 cans black beans, or sub corn-see notes ( do not use dry beans with chicken breast as breasts will overcook.)",
+            "4 cups chicken stock or broth (or water with 4 chicken bouillon cubes)",
+            "2 cups water",
+            "2 teaspoons salt, more to taste",
+            "2 teaspoons cumin",
+            "2 teaspoons chili powder",
+            "1 teaspoon dried oregano",
+            "juice from 1–2 limes",
+            "Optional: for a smoky heat, add a little chipotle (either the adobo sauce from canned chipotles, or a little ground chipotle powder to taste.",
+            "Garnish with any or all of the following:  tortilla strips, grated cheese, sour cream, avocado, hot sauce, cilantro, fresh jalapeño, scallions."
+        ],
+        "steps": [
+            "Set the Instant pot to the Saute function. Saute onions in the oil for 3-4 minutes while you prep the garlic, carrots and celery. Add them to the pot, and saute 3-4 minutes. (If using granulated garlic, add later with the spices)",
+            "Add the diced tomato and their juices, green chilies, chicken thighs (whole), dry black beans ( or canned, drained), chicken stock, water, salt and all the spices.  Give a good stir, and set the Instant pot to pressure cook on high. If using dry black beans, pressure cook 25 minutes. If using canned black beans, pressure cook for 14 minutes (same for either fresh or frozen thighs).",
+            "Manually let the pressure out, covering steam with a kitchen towel. (Or feel free to let the pressure release naturally.)",
+            "Shred chicken thighs with two forks (either right in the pot, or on a cutting board). The soup will thicken. (At this point you could add corn, and return to saute setting for a few minutes.) Squeeze with a generous amount of lime juice and taste for salt, adding more if necessary- especially if you used dry beans, you will need to add more. You want a good balance between lime and salt. ( If the soup tastes bland, it probably needs more of each.)",
+            "Divide among bowls and top with tortilla strips, cheese, sour cream, scallions or avocado and cilantro. Add hot sauce for added heat.",
+            "Enjoy!",
+            "For a more brothy soup, use only 1 can of beans vs. two. ( I prefer this brothy.)"
+        ],
+        "isInstantPot": true,
+        "cookingTime" : "Prep: 20 minutes. Pressue Time: 25 min (dry beans) | 14 min (canned beans).  Immediate Release"
+    }
+]

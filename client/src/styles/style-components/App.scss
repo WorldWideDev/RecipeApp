@@ -1,0 +1,29 @@
+body {
+    background-color: #001;
+    padding: 2em;
+    font-family: 'serif';
+}
+.main-title {
+    color: #DFF000;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+main > section {
+    flex: 1;
+    margin: .8em;
+}
+
+@media screen and (max-width: 750px){
+    main {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 751px){
+    main {
+        flex-direction: row;
+    }
+}

@@ -1,0 +1,35 @@
+form {
+    padding: 1em;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    border: 1px solid $color-accent-dark;
+    -webkit-text-fill-color: $color-accent-secondary-dark;
+    -webkit-box-shadow: 0 0 0px 1000px $bg-color-dark inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    & > .error {
+        color: $bg-color-danger-dark;
+    }
+    & > textarea {
+        height: 7em;
+    }
+    & > input, & > textarea {
+        margin-bottom: .7em;
+        font-size: .8em;
+        padding: .4em;
+        background-color: $bg-color-secondary-dark;
+        color: $color-secondary-dark;
+        border-radius: 8px;
+    }
+}

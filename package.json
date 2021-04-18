@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "typography": "^0.16.19",
+    "typography-theme-funston": "^0.16.19"
+  }
+}

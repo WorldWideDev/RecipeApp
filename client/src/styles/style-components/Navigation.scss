@@ -1,0 +1,13 @@
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+nav > * {
+    background-color: #262525;
+    padding: .3em 1em;
+    border-radius: 6px;
+}
+nav a {
+    color: green;
+    text-decoration: none;
+}

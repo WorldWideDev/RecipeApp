@@ -1,0 +1,24 @@
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: solid 1px $color-accent-dark;
+    margin-bottom: 1.3em;
+    & > a {
+        color: $color-secondary-dark;
+        text-decoration: none;
+    }
+    & > a:hover {
+    }
+    & > * {
+        flex: 1;
+        text-align: center;
+        padding: .2em 1.3em;
+    }
+    & > *:hover {
+        text-shadow: 1px 1px 1px black;
+        color: $color-link-dark;
+        border-radius: 5px 5px 0 0;
+        background-color: $bg-color-secondary-dark;
+        transition: all .3s linear;
+    }
+}
