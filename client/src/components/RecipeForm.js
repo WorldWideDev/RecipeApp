@@ -20,9 +20,24 @@ const RecipeForm = (props) => {
         : {...props.recipe, releaseDate:getFormReadyDate(props.recipe.releaseDate)};
     const { errors, onSubmitProp, children } = props;
     const [recipe, setRecipe] = useState({...initialState});
-    const {name, steps, ingredients, cookingTime, description} = recipe;
+    const [steps, setSteps] = useState([...recipe.steps]);
+    const [ingredients, setIngredients] = useState([...recipe.ingredients]);
+    const [newIngredient, setNewIngredient] = useState("");
+    const [newStep, setNewStep] = useState("");
+    const {name, cookingTime, description} = recipe;
     function onInputChanged(field, value) {
         setRecipe({ ...recipe, [field]:value});
+    }
+    function onNewItemHandler(itemType) {
+        switch(itemType) {
+            case 'step':
+                setIngredients([...ingredients, newIngredient])
+                setNewIngredient('');
+                return;
+            default:
+                setSteps([...steps, newStep])
+                setNewStep('');
+        }
     }
     function onSubmitHandler(e) {
         e.preventDefault();
@@ -41,6 +56,17 @@ const RecipeForm = (props) => {
                 <label htmlFor="cookingTime">Cook Time</label>
                 <span className="error">{ errors?.cookingTime?.message }</span>
                 <input className="form-control" type="text" id="cookingTime" value={cookingTime} onChange={(e) => onInputChanged('cookingTime', e.target.value)} />
+            </div>
+            <div className="form-group">
+                <label htmlFor="description">Description</label>
+                <span className="error">{ errors?.description?.message }</span>
+                <textarea className="form-control" type="text" id="cookingTime" value={cookingTime} onChange={(e) => onInputChanged('cookingTime', e.target.value)}></textarea>
+            </div>
+            <div className="form-group">
+                <label htmlFor="description">Ingredients</label>
+                <span className="error">{ errors?.ingredients?.message }</span>
+                <input className="form-control" type="text" id="ingredients" value={newIngredient} onChange={(e) => setNewIngredient(e.target.value)} />
+                <button className="btn" onClick={onNewItemHandler}>Add Ingredient</button>
             </div>
             <button type="submit" className="btn btn-primary">Send</button>
             { children }
