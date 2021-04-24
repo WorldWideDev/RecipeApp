@@ -12,7 +12,8 @@ module.exports = {
             })
     },
     create: (req, res) => {
-        const { title, releaseDate, rating, director, genre, plot, recipeUrl } = req.body;
+        const { name, description, cookTime, ingredients, steps, isIntantPot } = req.body;
+        console.log(name);
         Recipe.create({
             name, description, cookTime, ingredients, steps, isIntantPot
         })

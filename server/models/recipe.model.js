@@ -12,13 +12,15 @@ const RecipeSchema = new mongoose.Schema({
         type: [String]
     },
     steps: {
-        type: [String]
+        type: [String],
+        required: [ true, "Steps are required" ],
     },
     isIntantPot: {
         type: Boolean
     },
     cookingTime: {
-        type: String
+        type: String,
+        required: [ true, "Cooking time is required" ],
     }
 }, { timestamps: true });
 

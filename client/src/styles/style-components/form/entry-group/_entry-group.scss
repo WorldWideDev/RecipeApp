@@ -1,0 +1,28 @@
+.entry-group-container {
+    display: flex;
+    justify-content: space-between;
+    & > * {
+        flex: 1;
+    }
+    & > *:nth-child(odd) {
+        padding: 0 .5em 0 0;
+    }
+    & > *:nth-child(even) {
+        padding: 0 0 0 .5em;
+    }
+    & button.btn {
+        margin: 0;
+    }
+    & span {
+        display: block;
+    }
+}
+
+.entry-item-form-group {
+    margin: .7em 0;
+    display: flex;
+    & > input {
+        flex: 1;
+    }
+}
+
