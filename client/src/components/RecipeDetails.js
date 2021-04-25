@@ -17,7 +17,7 @@ const RecipeDetails = (props) => {
                 console.log("uh oh", err);
             });
 
-    }, []);
+    }, [id]);
     const deleteHandler = () => {
         const result = prompt("Type 'yes' to delete");
         if(result !== 'yes') { return; }

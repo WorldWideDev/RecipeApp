@@ -17,7 +17,6 @@ const INITIAL_RECIPE_STATE = {
 }
 // const RATINGS = ['G', 'PG', 'PG-13', 'R', 'NC-17', 'Unrated'];
 const RecipeForm = (props) => {
-    console.log("recipe form rendering");
     const initialState = (props.recipe === undefined)
         ? INITIAL_RECIPE_STATE
         : {...props.recipe, releaseDate:getFormReadyDate(props.recipe.releaseDate)};
@@ -25,15 +24,17 @@ const RecipeForm = (props) => {
     const [recipe, setRecipe] = useState({...initialState});
     const [steps, setSteps] = useState([...recipe.steps]);
     const [ingredients, setIngredients] = useState([...recipe.ingredients]);
-    const [newIngredient, setNewIngredient] = useState("");
     const [errors, setErrors] = useState([]);
-    const [newStep, setNewStep] = useState("");
     const {name, cookingTime, description} = recipe;
     function onInputChanged(field, value) {
         setRecipe({ ...recipe, [field]:value});
     }
     const updateRecipe = () => {
-        axios.put(`${API_URI}/${recipe._id}`, recipe)
+        const recipeToUpdate = { ...recipe,
+            ingredients: ingredients,
+            steps: steps,
+        };
+        axios.put(`${API_URI}/${recipe._id}`, recipeToUpdate)
             .then(res => {
                 setErrors([]);
                 navigate('/');
@@ -43,7 +44,11 @@ const RecipeForm = (props) => {
             });
     }
     const createRecipe = () => {
-        axios.post(API_URI, recipe)
+        const recipeToPost = { ...recipe,
+            ingredients: ingredients,
+            steps: steps,
+        };
+        axios.post(API_URI, recipeToPost)
             .then(res => {
                 setErrors([]);
                 navigate('/');
@@ -52,22 +57,7 @@ const RecipeForm = (props) => {
                 setErrors(err.response.data.errors);
             });
     }
-    function onNewItemHandler(itemType) {
-        console.log(itemType, newIngredient, ingredients);
-        switch(itemType) {
-            case 'ingredient':
-                setIngredients([...ingredients, newIngredient])
-                onInputChanged("ingredients", ingredients);
-                setNewIngredient('');
-                return;
-            default:
-                setSteps([...steps, newStep])
-                onInputChanged("steps", steps);
-                setNewStep('');
-        }
-    }
     function onSubmitHandler(e) {
-        console.log("submitting!");
         e.preventDefault();
         if(isCreate) {
             createRecipe();
@@ -104,9 +94,15 @@ const RecipeForm = (props) => {
             </div>
             <div className="entry-group-container">
                 <EntryFormGroup entries={ingredients} 
+                    errors={errors?.ingredients}
                     entryName={"ingredients"}
                     entryDisplayName={"Ingredient"} 
                     onEntriesChanged={(newIngredients) => setIngredients(newIngredients)}/>
+                <EntryFormGroup entries={steps} 
+                    errors={errors?.steps}
+                    entryName={"steps"}
+                    entryDisplayName={"Step"} 
+                    onEntriesChanged={(newSteps) => setSteps(newSteps)}/>
             </div>
             <button onClick={(e) => onSubmitHandler(e)} type="submit" 
                 className="btn btn-primary">Send</button>

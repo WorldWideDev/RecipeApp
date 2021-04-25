@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const EntryItem = (props) => {
-    const { value, onEntryItemChanged } = props;
+    const { value, onEntryItemChanged, onEntryItemDeleted } = props;
     const [isEdit, setIsEdit] = useState(false);
     const [text, setText] = useState(value);
 
@@ -18,9 +18,11 @@ const EntryItem = (props) => {
                 <input autoFocus className="form-control"
                     type="text" value={text} 
                     onChange={(e) => setText(e.target.value)} 
-                    onBlur={onUpdateHandler}
                 />
-                <button className="btn btn-danger">Delete</button>
+                <button className="btn btn-warning"
+                    onClick={onUpdateHandler}>Edit</button>
+                <button className="btn btn-danger"
+                    onClick={onEntryItemDeleted}>Delete</button>
             </div>
         )
     }

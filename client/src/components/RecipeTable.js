@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import API_URI from '../utilities/apiUtils.js';
 import { Link } from '@reach/router';
-const getFormattedDate = (date) => new Date(date).toLocaleDateString();
 const RecipeTable = (props) => {
     const [recipes, setRecipes] = useState([]);
     useEffect(() => {
