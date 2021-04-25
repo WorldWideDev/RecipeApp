@@ -1,5 +1,5 @@
 form {
-    padding: 1em;
+    padding: 0 1em;
 }
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
@@ -26,10 +26,19 @@ select:-webkit-autofill:focus {
     }
     & > input, & > textarea {
         margin-bottom: .7em;
-        font-size: .8em;
-        padding: .4em;
-        background-color: $bg-color-secondary-dark;
-        color: $color-secondary-dark;
-        border-radius: 8px;
+    }
+}
+.form-control {
+    font-size: .8em;
+    padding: .4em;
+    background-color: $bg-color-secondary-dark;
+    color: $color-secondary-dark;
+    border-radius: 8px;
+
+}
+.form-btns {
+    float: right;
+    & + * {
+        clear: right;
     }
 }

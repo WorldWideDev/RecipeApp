@@ -12,15 +12,16 @@ module.exports = {
             })
     },
     create: (req, res) => {
-        const { title, releaseDate, rating, director, genre, plot, recipeUrl } = req.body;
+        const { name, description, cookingTime, ingredients, steps, isIntantPot } = req.body;
+        console.log(req.body);
         Recipe.create({
-            name, description, cookTime, ingredients, steps, isIntantPot
+            name, description, cookingTime, ingredients, steps, isIntantPot
         })
             .then(recipe => res.json(recipe))
             .catch(err => res.status(400).json(err));
     },
     getOne: (req, res) => {
-        console.log("GET:/{id}")
+        console.log(`GET:/${req.params.id}`)
         Recipe.findById(req.params.id)
             .then((recipe) => {
                 res.json(recipe);
@@ -31,7 +32,7 @@ module.exports = {
             });
     },
     update: (req, res) => {
-        console.log("PUT:/{id}");
+        console.log(`PUT:/${req.params.id}`)
         const { name, description, cookTime, ingredients, steps, isIntantPot } = req.body;
         Recipe.findByIdAndUpdate(req.params.id, req.body, { 
             new:true, runValidators: true 
@@ -40,6 +41,7 @@ module.exports = {
             .catch(err => res.status(400).json(err));
     },
     delete: (req, res) => {
+        console.log(`DEL:/${req.params.id}`)
         Recipe.findByIdAndDelete(req.params.id)
             .then(recipe => res.json({id:recipe._id}))
             .catch(err => res.json(err));

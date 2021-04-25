@@ -9,16 +9,25 @@ const RecipeSchema = new mongoose.Schema({
         type: String
     },
     ingredients: { 
-        type: [String]
+        type: [String],
+        validate: {
+            validator: i => Array.isArray(i) && i.length > 0,
+            message: "At least one ingredient required"
+        } 
     },
     steps: {
-        type: [String]
+        type: [String],
+        //validate: {
+        //    validator: s => Array.isArray(s) && s.length > 0,
+        //    message: "At least one step required"
+        //} 
     },
     isIntantPot: {
         type: Boolean
     },
     cookingTime: {
-        type: String
+        type: String,
+        required: [ true, "Cooking time is required" ],
     }
 }, { timestamps: true });
 

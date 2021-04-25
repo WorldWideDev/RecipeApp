@@ -1,5 +1,5 @@
 section {
-    & > h1 {
+    & h1  {
         color: $color-accent-dark;
     }
 }
@@ -7,15 +7,17 @@ section {
     & > div {
         display: flex;
         justify-content: space-between;
-
-        & > * {
-            flex: 1;
-        }
     }
     & strong {
         color: $color-accent-secondary-dark;
     }
     & > h2 {
         border-bottom: solid 1px $color-accent-dark;
+    }
+}
+.recipe-details-card-info {
+    & > * {
+        flex: 1;
+        padding: 0 2em;
     }
 }

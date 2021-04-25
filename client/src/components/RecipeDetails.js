@@ -5,7 +5,7 @@ import RecipeForm from './RecipeForm.js';
 import axios from 'axios';
 
 const RecipeDetails = (props) => {
-    const { id, onSubmitProp, onDeleteProp, errors } = props;
+    const { id } = props;
     const [recipe, setRecipe] = useState(null);
     const [isEditing, setIsEditing] = useState(false);
     useEffect(() => {
@@ -17,18 +17,23 @@ const RecipeDetails = (props) => {
                 console.log("uh oh", err);
             });
 
-    }, []);
+    }, [id]);
     const deleteHandler = () => {
         const result = prompt("Type 'yes' to delete");
         if(result !== 'yes') { return; }
-        onDeleteProp(recipe._id);
-        navigate('/');
+        axios.delete(`${API_URI}/${id}`)
+            .then((res) => {
+                navigate('/');
+            })
+            .catch((err) => {
+                console.log(err);
+            })
     }
     const renderConditionalEdit = () => {
         return (isEditing)
             ? (
                 <section>
-                    <RecipeForm recipe={recipe} errors={errors} onSubmitProp={onSubmitProp}>
+                    <RecipeForm recipe={recipe} isCreate={false}>
                         <button 
                             onClick={() => setIsEditing(false)}
                             className="btn btn-warning">Cancel</button>
@@ -37,10 +42,20 @@ const RecipeDetails = (props) => {
             )
             : (
                 <section className="recipe-details-card">
-                    <h1>{ recipe.name }</h1>     
+                    <div>
+                        <h1>{ recipe.name }</h1>     
+                        <aside className="btn-group">
+                            <button 
+                                onClick={() => setIsEditing(true)}
+                                className="btn btn-warning">Edit</button>
+                            <button 
+                                onClick={deleteHandler}
+                                className="btn btn-danger">Delete</button>
+                        </aside>
+                    </div>
                     <p><strong>Cook Time:</strong> {recipe.cookingTime}</p>
                     <blockquote>{ recipe.description }</blockquote>
-                    <div>
+                    <div className="recipe-details-card-info">
                         <main>
                             <h2>Ingredients</h2>
                             <ul>
@@ -58,12 +73,6 @@ const RecipeDetails = (props) => {
                             </ol>
                         </aside>
                     </div>
-                    <button 
-                        onClick={() => setIsEditing(true)}
-                        className="btn btn-warning">Edit</button>
-                    <button 
-                        onClick={deleteHandler}
-                        className="btn btn-danger">Delete</button>
                 </section>
             );
     }

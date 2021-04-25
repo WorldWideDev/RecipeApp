@@ -72,5 +72,53 @@
         ],
         "isInstantPot": true,
         "cookingTime" : "Prep: 20 minutes. Pressue Time: 25 min (dry beans) | 14 min (canned beans).  Immediate Release"
+    },
+    {
+        "name": "Refried Beans",
+        "description": "Homemade refried beans, restaruant style.",
+        "ingredients" : [
+            "1/2 pound dried pinto or black beans",
+            "Water",
+            "2 sprigs fresh epazote or oregano (see note)",
+            "1 medium white onion, 1/2 minced (about 1/2 cup), 1/2 left whole",
+            "2 medium cloves garlic",
+            "Kosher salt",
+            "6 tablespoons lard, bacon drippings, vegetable oil, or butter (see note)"
+        ],
+        "steps": [
+            "In a large pot, cover the beans with cold water by at least 2 inches.",
+            "Add herb sprigs, the whole onion half, and garlic cloves and bring to a boil over high heat.",
+            "Reduce heat to simmer and cook until beans are very tender, about 1 to 2 hours.",
+            "Season with salt. Drain beans, reserving bean-cooking liquid. You should have about 3 cups of cooked beans; if you have more, measure out 3 cups of beans and reserve the rest for another use. Discard herb sprigs, onion, and garlic.",
+            "In a large skillet, heat lard, bacon drippings, or oil until shimmering, or butter until foaming, over medium-high heat. Add minced onion and cook, stirring occasionally, until translucent and lightly golden, about 7 minutes.",
+            "Stir in beans and cook for 2 minutes. Add 1/4 cup of reserved bean-cooking liquid. Using bean masher, potato masher, or back of a wooden spoon, smash the beans to form a chunky purée; alternatively, use a stick blender to make a smoother purée. Thin with more bean cooking water until desired consistency is reached. If refried beans become too wet, simmer, stirring, until thickened; if they become too dry, add more bean-cooking liquid, 1 tablespoon at a time, as needed.",
+            "Season with salt and serve."
+        ],
+        "isInstantPot": false,
+        "cookingTime" : "2 - 3 hours"
+    },
+    {
+        "name": "Chili Verde",
+        "description": "Chili Verde, Instant Pot.",
+        "ingredients" : [
+            "4 pounds (1.9kg) boneless pork shoulder, cut into 2-inch chunks",
+            "3/4 pound tomatillos (about 4 tomatillos; 350g), quartered, husks discarded",
+            "2/3 pound Poblano peppers (about 2 peppers; 300g), roughly chopped, seeds and stems discarded (see note)",
+            "6 ounces Anaheim or Cubanelle peppers (about 2 peppers; 170g), roughly chopped, seeds and stems discarded (see note)",
+            "2 serrano or jalapeño chilies, roughly chopped, stems discarded (see note)",
+            "8 ounces white onion (about 1 medium; 225g), roughly chopped",
+            "6 medium cloves garlic, peeled",
+            "1 tablespoon (15g) whole cumin seed, toasted and ground",
+            "Kosher salt",
+            "1/2 cup loosely packed fresh cilantro leaves and fine stems (about 1/2 ounce; 15g), plus more for garnish",
+            "1 tablespoon (15ml) Asian fish sauce, such as Red Boat",
+            "Fresh corn tortillas and lime wedges, for serving"
+        ],
+        "steps": [
+            "In a pressure cooker, combine pork, tomatillos, Poblano peppers, Anaheim peppers, serrano peppers, onion, garlic, cumin, and a big pinch of salt. Heat over high heat until gently sizzling, then seal pressure cooker, bring to high pressure, and cook for 30 minutes. Release pressure.",
+            "Using tongs, transfer pork pieces to a bowl and set aside. Add cilantro and fish sauce to remaining contents of pressure cooker. Blend with an immersion blender or in a countertop blender, then season to taste with salt. Return pork to sauce and stir gently to combine. Serve immediately with tortillas and lime wedges."
+        ],
+        "isInstantPot": true,
+        "cookingTime" : "Prep: 10 mins.  Pressure: 30 mins.  Immediate Release"
     }
 ]
