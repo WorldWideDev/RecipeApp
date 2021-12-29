@@ -1,5 +1,42 @@
 [
     {
+        "name": "Zha Jiang Mian",
+        "description": "Chinese Noodles.",
+        "ingredients" : [ 
+            "Garlic (4-5 cloves, minced)",
+            "Green Onion (2-3 stalks, minced)",
+            "Ginger (1 finger, minced)",
+            "Star Anise (1)",
+            "Porkbelly (1 lb)",
+            "Canola Oil (2-3 tbps)",
+            "Lee Kum Kee Soybean Sauce (1 jar)",
+            "XINHE Sweet bean paste (1 300g tub)",
+            "White Chinese Cooking Wine (1/4 cup, optional)",
+            "Daikon Radish",
+            "Bean Sprouts (serve with)",
+            "Flour (3 cups)",
+            "Water (1 cup)"
+        ],
+        "steps": [
+            "Mince garlic, ginger, green onion",
+            "In a small mixing bowl, mix together the soybean sauce and sweet bean paste",
+            "Remove bottom fat from pork belly, slice into 1cm x 2cm pieces.",
+            "Coat the bottom of a large saucepan with oil, heat until oil begins to bubble. Set stove to medium heat.",
+            "Carfully place the porkbelly in the pan, and brown.",
+            "Toss the garlic, green onion, ginger and star anise into the pan and stir.",
+            "Toss in the sauce mixture, stir, and set timer for 30 minutes. Stove should remain on medium heat.",
+            "If you've got cooking wine, toss it in here",
+            "Stir meat/sauce every 5 minutes until 30 minutes are up.",
+            "While meat and sauce are cooking, begin to prepare the noodles.  Begin to boil water for the noodles and prepare a standing mixer with the hook attachment, and a lightly floured cutting board for cutting the noodles.",
+            "In the mixer's mixing bowl, add flour and gradually add water as you mix the dough.",
+            "Once the dough is mixed, remove the dough, and divide into three evenly sized balls",
+            "One by one, bring each dough ball to the floured surface and use a rolling pin to flatten to approximately 1/4 cm. Then, using a well floured dough knife, cut the noodles lengthwise to approximately 1/4 cm in width.",
+            "Place the noodles in the boiling water, set a timer for 3 minutes, and prepare  When finished, remove the noodles from"
+        ],
+        "isInstantPot": false,
+        "cookingTime" : "2 - 3 hours"
+    },
+    {
         "name": "Butter Chicken",
         "description": "Make restaurant-quality Indian butter chicken at home in under 30 minutes! Join the thousands who have made this very popular Instant Pot Butter Chicken Recipe--which also happens to be a great keto chicken recipe.",
         "ingredients" : [
