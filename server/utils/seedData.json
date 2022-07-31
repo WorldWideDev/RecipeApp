@@ -157,5 +157,33 @@
         ],
         "isInstantPot": true,
         "cookingTime" : "Prep: 10 mins.  Pressure: 30 mins.  Immediate Release"
+    },
+    {
+        "name": "Chicken Paprika",
+        "description": "Papa Jefe's signature Paprika Chicken",
+        "ingredients" : [
+            "1-1 1/2 lbs of boneless chicken (breasts or tenders)",
+            "1 cup of chicken stock",
+            "1 yellow onion, finely chopped",
+            "2 tbsp of paprika",
+            "1/2 cup heavy cream",
+            "1 tsp dijon mustard",
+            "Garlic salt to sprinkle on chicken.",
+            "Pepper",
+            "Large saute pan"
+        ],
+        "steps": [
+            "Caramelize onion and paprika (sauce on low heat for 45 minutes or so, add paprika once onion has started to soften)",
+            "Make a hole in the onion and add the chicken. Saute over medium heat until cooked.",
+            "Remove chicken to a plate",
+            "Add chicken stock to onion, scape up any browned bits, reduce by about 1/2.",
+            "Mix in mustard, let blend with stock",
+            "Add cream, reduce by half or so.",
+            "Taste for salt/pepper.",
+            "Warm up chicken in sauce.",
+            "Serve over rice or pasta."
+        ],
+        "isInstantPot": false,
+        "cookingTime" : "Prep: 10 mins.  Cook: 20 mins.  Total: 30 mins."
     }
 ]

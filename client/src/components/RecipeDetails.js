@@ -56,7 +56,7 @@ const RecipeDetails = (props) => {
                     <p><strong>Cook Time:</strong> {recipe.cookingTime}</p>
                     <blockquote>{ recipe.description }</blockquote>
                     <div className="recipe-details-card-info">
-                        <main>
+                        <main className="recipe-details-card-info-panel">
                             <h2>Ingredients</h2>
                             <ul>
                             {recipe.ingredients.map((ing, i) => {
@@ -64,7 +64,7 @@ const RecipeDetails = (props) => {
                             })}
                             </ul>
                         </main>
-                        <aside>
+                        <aside className="recipe-details-card-info-panel">
                             <h2>Steps</h2>
                             <ol>
                             {recipe.steps.map((step, i) => {
