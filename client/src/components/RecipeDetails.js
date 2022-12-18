@@ -1,3 +1,4 @@
+import seedData from '../data/seed-data.json';
 import { React, useEffect, useState } from 'react';
 import { navigate } from '@reach/router';
 import API_URI from '../utilities/apiUtils.js';
@@ -9,13 +10,10 @@ const RecipeDetails = (props) => {
     const [recipe, setRecipe] = useState(null);
     const [isEditing, setIsEditing] = useState(false);
     useEffect(() => {
-        axios.get(`${API_URI}/${id}`)
-            .then((res) => {
-                setRecipe(res.data);
-            })
-            .catch((err) => {
-                console.log("uh oh", err);
-            });
+        const filteredRecipes = seedData.filter(recipe => recipe.id == id);
+
+        const r = filteredRecipes.length > 0 ? filteredRecipes[0] : {};
+        setRecipe(r);
 
     }, [id]);
     const deleteHandler = () => {

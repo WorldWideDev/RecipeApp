@@ -1,12 +1,14 @@
 import { useState, useEffect } from 'react';
+import seedRecipes from '../data/seed-data.json';
 import axios from 'axios';
 import API_URI from '../utilities/apiUtils.js';
 import { Link } from '@reach/router';
 const RecipeTable = (props) => {
     const [recipes, setRecipes] = useState([]);
     useEffect(() => {
-        axios.get(API_URI)
-            .then(res => setRecipes(res.data));
+        setRecipes(seedRecipes);
+       // axios.get(API_URI)
+       //     .then(res => setRecipes(res.data));
     }, []);
     return (
         <table className="table table-dark table-striped">
@@ -20,8 +22,8 @@ const RecipeTable = (props) => {
             <tbody>
             {recipes.map((recipe, i) => {
                 return (
-                <tr key={recipe._id}>
-                    <td><Link to={`/recipes/${ recipe._id }`}>{ recipe.name }</Link></td>
+                <tr key={recipe.id}>
+                    <td><Link to={`/recipes/${ recipe.id }`}>{ recipe.name }</Link></td>
                     <td>{ recipe.cookingTime }</td>
                     <td>{ recipe.description }</td>
                 </tr>
